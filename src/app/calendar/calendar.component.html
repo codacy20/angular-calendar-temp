@@ -1,8 +1,8 @@
 <div class="container">
-	<app-day [active]="active === 0" [day]="days[0]"></app-day>
-	<app-day [active]="active === 1" [day]="days[1]"></app-day>
-	<app-day [active]="active === 2" [day]="days[2]"></app-day>
-	<app-day [active]="active === 3" [day]="days[3]"></app-day>
-	<app-day [active]="active === 4" [day]="days[4]"></app-day>
-	<app-day [active]="active === 5" [day]="days[5]"></app-day>
+	<app-day [active]="active === 0" [day]="days[0]" (messageToEmit)="getMessage($event)"></app-day>
+	<app-day [active]="active === 1" [day]="days[1]" (messageToEmit)="getMessage($event)"></app-day>
+	<app-day [active]="active === 2" [day]="days[2]" (messageToEmit)="getMessage($event)"></app-day>
+	<app-day [active]="active === 3" [day]="days[3]" (messageToEmit)="getMessage($event)"></app-day>
+	<app-day [active]="active === 4" [day]="days[4]" (messageToEmit)="getMessage($event)"></app-day>
+	<app-day [active]="active === 5" [day]="days[5]" (messageToEmit)="getMessage($event)"></app-day>
 </div>

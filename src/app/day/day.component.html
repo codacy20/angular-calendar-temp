@@ -1,4 +1,4 @@
-<div class="container" [ngClass]="{'active':active}">
+<div class="container" [ngClass]="{'active':active}" (click)="sendMessageToParent(messageToSendC)">
 	<p>{{day.name}}</p>
 	<p>{{day.date}}</p>
 </div>

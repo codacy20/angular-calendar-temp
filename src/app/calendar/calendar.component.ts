@@ -7,6 +7,7 @@ import { Day, WeekDays } from "../model";
   styleUrls: ["./calendar.component.css"]
 })
 export class CalendarComponent implements OnInit {
+  receivedChildMessage: string;
   active = 2;
   days: Day[] = [
     { name: WeekDays[0], date: 1 },
@@ -17,6 +18,10 @@ export class CalendarComponent implements OnInit {
     { name: WeekDays[5], date: 6 }
   ];
   constructor() {}
+
+  getMessage(message: string) {
+    this.receivedChildMessage = message;
+  }
 
   ngOnInit() {}
 }
