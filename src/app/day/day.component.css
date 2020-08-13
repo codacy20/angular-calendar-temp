@@ -17,6 +17,7 @@ cursor: pointer;
 }
 
 .container.active{
+  transition: 0.4s ease-in-out;
 background: #5E4890;
 box-shadow: 0px 15px 15px -10px rgba(94, 72, 144, 0.791412);
 border-radius: 25px;
