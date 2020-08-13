@@ -1,0 +1,23 @@
+.container{
+width: 91px;
+height: 98px;
+box-sizing: border-box;
+border-radius: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.container p{
+  margin-block-start: 5px;
+    margin-block-end: 5px;
+    font-family: 'Helvetica';
+}
+
+.container.active{
+background: #5E4890;
+box-shadow: 0px 15px 15px -10px rgba(94, 72, 144, 0.791412);
+border-radius: 25px;
+color: white;
+}
